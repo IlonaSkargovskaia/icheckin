@@ -626,7 +626,8 @@ main {
 footer{
     background-color: var(--dark-grey);
     padding: 3rem 0 1.5rem 0;
-    color: #b6b6b6
+    color: #b6b6b6;
+    border-top: 4px solid var(--primary)
 }
 
 footer h4{

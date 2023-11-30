@@ -2,7 +2,6 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { testimonials } from "./data";
-import { FaQuoteRight } from "react-icons/fa";
 import "./slider.css";
 
 const responsive = {
