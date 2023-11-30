@@ -22,11 +22,12 @@ const Home = () => {
         <About />
         <Process />
         <FeaturesBlock />
-        <Banner />
         
-        <Testimonials />
         <ScreenShots />
+        <Testimonials />
+        <Banner />
         <Questions />
+       
     </main>
     <Footer />
     </>

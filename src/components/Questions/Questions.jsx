@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import faq from "../../assets/images/faq-item.png";
+import faq from "../../assets/images/mac-frame.webp";
 import { faqData } from "./data";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 
@@ -19,11 +19,11 @@ const Questions = () => {
                             <div className="subtitle">- FAQ</div>
                             <h2 className="title mb-12">Questions? Look here.</h2>
 
-                            <div className="accordion">
+                            <div className="accordion pl-16">
                                 {faqData.map((item, index) => (
                                     <div
                                         key={index}
-                                        className={`accordion-item acc w-5/6 mb-8 ${
+                                        className={`accordion-item acc w-5/6 mb-4 ${
                                             activeIndex === index
                                                 ? "active"
                                                 : ""

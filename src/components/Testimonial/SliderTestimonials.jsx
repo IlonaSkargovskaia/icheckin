@@ -30,21 +30,10 @@ const SliderTestimonials = () => (
             const { id, image, name, title, quote } = item;
             return (
                 <article key={id} className="flex flex-col justify-between">
-                    {/* <FaQuoteRight className="person-icon" /> */}
+                    <img src={image} alt={name} className="person-img" />
+                    <h5 className="person-name">{name}</h5>
+                    <p className="person-title">{title}</p>
                     <p className="person-text">{quote}</p>
-                    <div className="flex items-center ">
-                        <div className="text-left">
-                            <img
-                                src={image}
-                                alt={name}
-                                className="person-img"
-                            />
-                        </div>
-                        <div className="flex flex-col text-left ">
-                            <h5 className="person-name">{name}</h5>
-                            <p className="person-title">{title}</p>
-                        </div>
-                    </div>
                 </article>
             );
         })}

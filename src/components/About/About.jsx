@@ -12,7 +12,7 @@ const About = () => {
                             <img
                                 src={img}
                                 alt="about-icheckin"
-                                style={{ maxHeight: "40rem" }}
+                                style={{ maxHeight: "34rem" }}
                             />
                         </div>
                     </div>

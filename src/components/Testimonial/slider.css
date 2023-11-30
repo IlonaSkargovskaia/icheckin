@@ -9,19 +9,8 @@ article {
     margin: 1rem;
     min-height: 15rem;
     position: relative;
-    border-radius: 1rem;
 }
 
-article::before {
-    content: "\201D";
-    position: absolute;
-    bottom: 0;
-    right: 2rem;
-    font-size: 9rem;
-    line-height: 1;
-    margin-bottom: -40px;
-    color: #dfdfdf;
-}
 
 article.activeSlide {
     opacity: 1;
@@ -72,4 +61,11 @@ article.nextSlide {
     font-size: 36px;
     margin-bottom: 1rem;
     color: var(--light-grey)
+}
+
+.react-multiple-carousel__arrow--left {
+    left: 0;
+}
+.react-multiple-carousel__arrow--right {
+    right: 0;
 }

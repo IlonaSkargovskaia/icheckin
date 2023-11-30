@@ -1,16 +1,16 @@
 import React from "react";
 import appleIcon from "../../assets/images/appstore-badge.png";
 import androidIcon from "../../assets/images/googleplay-badge.png";
-import tablePic from "../../assets/images/dash-top.png";
+import tablePic from "../../assets/images/top.avif";
 import { BsQrCodeScan } from "react-icons/bs";
 import { PiPlayCircleThin } from "react-icons/pi";
 
 const Hero = () => {
     return (
         <section className="hero-banner ">
-            <div className="container mx-auto hero py-8 pl-28 rounded-2xl mt-2 mb-8">
+            <div className="container mx-auto hero py-8 px-24 rounded-2xl mt-2 mb-8">
                 <div className="hero-content flex justify-center flex-wrap">
-                    <div className="hero-left lg:w-1/2 xl:pr-36 pt-12">
+                    <div className="hero-left lg:w-1/2 pt-12">
                         <div className="hero-badge badge flex items-center my-8 bg-white w-max py-2 px-2 rounded-full">
                             <div className="badge-icon">
                                 <BsQrCodeScan />
@@ -33,8 +33,8 @@ const Hero = () => {
                             and streamline the attendance process like never
                             before.
                         </div>
-                        <div className="download-icons flex gap-4 w-3/4 items-center">
-                            <div className="android-icon w-full">
+                        <div className="download-icons flex gap-4 items-center">
+                            <div className="android-icon">
                                 <a
                                     href="https://play.google.com/store/apps/details?id=com.sobow.icheckin"
                                     target="_blank"
@@ -46,7 +46,7 @@ const Hero = () => {
                                     />
                                 </a>
                             </div>
-                            <div className="apple-icon w-full">
+                            <div className="apple-icon">
                                 <a
                                     href="https://apps.apple.com/us/app/i-checkin/id6463780727"
                                     target="_blank"
@@ -55,7 +55,7 @@ const Hero = () => {
                                     <img
                                         src={appleIcon}
                                         alt="android-iCheckin"
-                                        style={{ maxHeight: "61px" }}
+                                       
                                     />
                                 </a>
                             </div>
@@ -65,7 +65,7 @@ const Hero = () => {
                             <p>Watch the Overview</p>
                         </button>
                     </div>
-                    <div className="hero-right lg:w-1/2 ">
+                    <div className="hero-right lg:w-1/2 flex items-center">
                         <img
                             src={tablePic}
                             alt="table_screen"
