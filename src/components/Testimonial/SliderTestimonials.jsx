@@ -3,6 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { testimonials } from "./data";
 import "./slider.css";
+import StarRating from "./StarRating";
 
 const responsive = {
     superLargeDesktop: {
@@ -26,13 +27,19 @@ const responsive = {
 const SliderTestimonials = () => (
     <Carousel responsive={responsive}>
         {testimonials.map((item) => {
-            const { id, image, name, title, quote } = item;
+            const { id, image, name, title, quote, rating } = item;
             return (
                 <article key={id} className="flex flex-col justify-between">
-                    <img src={image} alt={name} className="person-img" />
-                    <h5 className="person-name">{name}</h5>
-                    <p className="person-title">{title}</p>
-                    <p className="person-text">{quote}</p>
+                    <div>
+                        <img src={image} alt={name} className="person-img" />
+                        <h5 className="person-name">{name}</h5>
+                        <p className="person-title">{title}</p>
+
+                        <p className="person-text">{quote}</p>
+                    </div>
+                    <div>
+                        <StarRating rating={rating} />
+                    </div>
                 </article>
             );
         })}

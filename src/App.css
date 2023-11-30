@@ -103,6 +103,11 @@ nav a:active {
     padding: 10px;
 }
 
+.subtitle{
+    font-size: 28px;
+    margin-bottom: 1rem;
+}
+
 main {
     margin-top: 80px;
 }
@@ -248,7 +253,7 @@ main {
 
 .download-icons img{
     transition: var(--transition);
-    max-height: 61px
+    max-height: 50px;
 }
 
 .download-icons img:hover{
@@ -475,7 +480,7 @@ main {
 }
 
 .box h3{
-    color: var(--light-grey)
+    /* color: var(--light-grey) */
 }
 
 /* process */
