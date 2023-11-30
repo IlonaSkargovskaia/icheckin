@@ -520,7 +520,8 @@ main {
 }
 
 .step-content{
-    color: var(--light-grey)
+    color: var(--light-grey);
+    font-size: 14px;
 }
 
 /* about */
@@ -554,6 +555,7 @@ main {
 
 .feature h3{
     font-size: 20px;
+    margin-bottom: 0;
 }
 
 .feature .icon{
@@ -562,6 +564,10 @@ main {
     border-radius: 50%;
     color: var(--white);
     font-size: 24px;
+}
+
+.feature .content p{
+    color: var(--light-grey)
 }
 
 /* banner */
