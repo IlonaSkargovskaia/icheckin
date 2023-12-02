@@ -23,7 +23,6 @@
     --box-shadow: 0 10px 28px 0 hsla(210, 8%, 54%, .2);
 }
 
-
 html,
 body,
 #root {
@@ -313,8 +312,8 @@ main {
     padding: 5px;
     overflow: hidden;
     z-index: 0;
-    top: 3.5rem;
-    right: 9rem;
+    top: 5rem;
+    right: 1rem;
 }
 
 .circle-animate {
@@ -509,18 +508,6 @@ main {
     }
 }
 
-@media screen and (max-width: 990px) {
-    .circle-animate-wrap {
-        display: none
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .circle-animate-wrap {
-        top: -120px;
-        transform: translate(0, 0) scale(.7)
-    }
-}
 
 .box-icon {
     color: var(--light-grey);
@@ -751,4 +738,122 @@ footer ul li {
 .social-links a:hover {
     background: var(--primary);
     color: var(--grey);
+}
+
+@media screen and (min-width: 1580px) {
+    .circle-animate-wrap{
+        top:3rem;
+        right: 4rem;
+    }
+}
+
+@media screen and (max-width: 1256px) {
+    .circle-animate{
+        width:500px;
+        height: 500px;
+    }
+
+    .circle-animate .circle-md{
+        width:400px;
+        height: 400px;
+    }
+
+    .circle-animate .circle-sm{
+        width:300px;
+        height: 300px;
+    }
+
+    .circle-animate .circle-lg span.dot:nth-child(2n) {
+        margin-left: -224px;
+        top: 125px;
+    }
+
+    .circle-animate .circle-lg span.dot:nth-child(3n) {
+        margin-left: -202px;
+        top: 397px;
+    }
+
+    .circle-animate .circle-md span.dot:nth-child(2n) {
+        margin-left: -201px;
+        top: 157px;
+    }
+
+    .circle-animate .circle-md span.dot:nth-child(3n) {
+        margin-left: -202px;
+        top: 227px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .circle-animate-wrap {
+        display: none
+    }
+
+    .hero{
+        padding: 2rem;
+    }
+
+    .hero-left{
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    .hero-badge{
+        margin: auto;
+        margin-bottom: 3rem;    
+    }
+
+    .hero h1{
+        max-width: 85%;
+        margin: auto;
+    }
+
+    .hero-description{
+        margin: 2rem auto;
+    }
+
+    .download-icons{
+        justify-content: center;
+    }
+
+    .hero-overview{
+        margin: 2rem auto 0 auto;
+    }
+
+    .boxes{
+        gap: 2.5rem;
+    }
+
+    .box-title h3{
+        font-size: 1rem;
+    }
+
+    .img-col-left{
+        width: 100%;
+        margin-right: 2rem;
+    }
+    .about-list {
+        max-width: 100%;
+    }
+
+    .process-steps{
+        gap: 4rem;
+    }
+
+    .features-row{
+        flex-direction: column;
+    }
+
+    .features-row .col{
+        text-align: left;
+    }
+
+    .features-row .feature{
+        padding: 1rem;
+    }
+    .features-row .feature:hover{
+        background-color: var(--grey);
+        
+    }
 }

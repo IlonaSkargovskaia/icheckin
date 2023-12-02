@@ -18,9 +18,9 @@ const Hero = () => {
     };
     return (
         <section className="hero-banner " id="home">
-            <div className="container mx-auto hero py-8 px-24 rounded-2xl mt-2 mb-8">
-                <div className="hero-content flex justify-center flex-wrap">
-                    <div className="hero-left lg:w-1/2 pt-12">
+            <div className="container mx-auto hero py-8 pl-24 rounded-2xl mt-2 mb-8">
+                <div className="hero-content flex justify-center sm:flex-wrap lg:flex-nowrap">
+                    <div className="hero-left pt-12">
                         <div className="hero-badge badge flex items-center my-8 bg-white w-max py-2 px-2 rounded-full">
                             <div className="badge-icon">
                                 <BsQrCodeScan />
@@ -81,14 +81,18 @@ const Hero = () => {
                             onClose={closeVideoModal}
                         />
                     </div>
-                    <div className="hero-right lg:w-1/2 flex items-center">
+                    <div className="hero-right flex items-center">
                         <img
                             src={tablePic}
                             alt="table_screen"
                             className="hero-pic"
                         />
 
-                        <div className="circle-animate-wrap">
+                        
+                    </div>
+                    
+                </div>
+                <div className="circle-animate-wrap">
                             <div className="circle-animate">
                                 <div className="circle circle-lg">
                                     <span className="dot"></span>
@@ -110,8 +114,6 @@ const Hero = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
             </div>
         </section>
     );

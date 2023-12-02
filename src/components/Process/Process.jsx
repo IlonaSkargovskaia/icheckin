@@ -9,7 +9,7 @@ const Process = () => {
                     <h4 className="subtitle">- Process</h4>
                     <h2 className="title ">How does it work</h2>
                 </div>
-                <div className="process-steps flex gap-24 text-center my-8">
+                <div className="process-steps flex gap-24 text-center my-8 sm:flex-wrap lg:flex-nowrap">
                     {process.map((item, index) => {
                         const { number, title, content } = item;
                         return (

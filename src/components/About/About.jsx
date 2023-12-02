@@ -8,7 +8,7 @@ const About = () => {
         <section className="about my-32">
             <div className="container mx-auto">
                 <div className="about-row flex items-center gap-4">
-                    <div className="col w-1/2 flex justify-center">
+                    <div className="img-col-left col lg:w-1/2 flex justify-center">
                         <div className="about-img">
                             <img
                                 src={img}
@@ -17,7 +17,7 @@ const About = () => {
                             />
                         </div>
                     </div>
-                    <div className="col w-1/2">
+                    <div className="col lg:w-1/2">
                         <div className="about-title">
                             <h2 className="title">
                                 About <span>i-Checkin</span>

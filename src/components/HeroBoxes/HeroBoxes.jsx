@@ -4,7 +4,7 @@ import { boxes } from "./boxes";
 const HeroBoxes = () => {
     return (
         <div className="container mx-auto mb-32">
-            <div className="flex flex-wrap gap-28 justify-center">
+            <div className="boxes flex flex-wrap gap-16 xl:gap-28 justify-center">
                 {boxes.map((item, index) => {
                     const { icon, title } = item;
                     return (

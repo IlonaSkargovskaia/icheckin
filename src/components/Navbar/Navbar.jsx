@@ -49,7 +49,7 @@ const Navbar = () => {
                         <a href="/" className="logo">
                             <img src={logo} alt="logo-iCheckin" />
                         </a>
-                        <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
+                        <ul className="flex-1 flex justify-center items-center gap-8 max-lg:hidden">
                             {navLinks.map((item) => (
                                 <li key={item.label}>
                                     <a

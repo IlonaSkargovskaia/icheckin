@@ -38,7 +38,7 @@ const FeaturesBlock = () => {
                 <div className="title text-center">
                     <div className="subtitle">- Features</div>
                     <h2>Our amazing features</h2>
-                    <p className="w-1/2 mb-16 mx-auto">
+                    <p className="lg:w-1/2 mb-16 mx-auto">
                         I-Checkin adapts to any event type, ensuring
                         user-friendly simplicity and robust functionality,{" "}
                         <br /> whether it's a one-time event or a recurring
@@ -46,11 +46,11 @@ const FeaturesBlock = () => {
                     </p>
                 </div>
                 <div className="features-row flex justify-center items-center gap-8">
-                    <div className="col w-2/6 text-right flex flex-col gap-8">
+                    <div className="col lg:w-2/6 text-right flex flex-col gap-8">
                         {featuresData.slice(0, 3).map((feature, index) => (
                             <div
                                 key={index}
-                                className="feature flex flex-row-reverse items-center gap-4 hover:cursor-pointer"
+                                className="feature flex lg:flex-row-reverse items-center gap-4 hover:cursor-pointer"
                                 onMouseEnter={() => handleFeatureHover(index)}
                             >
                                 <div className="icon">{feature.icon}</div>
@@ -61,7 +61,7 @@ const FeaturesBlock = () => {
                             </div>
                         ))}
                     </div>
-                    <div className="col w-1/6 flex justify-center">
+                    <div className="col lg:w-1/6 flex justify-center">
                         <div
                             className="feature-image"
                             style={{
@@ -79,7 +79,7 @@ const FeaturesBlock = () => {
                             />
                         </div>
                     </div>
-                    <div className="col w-2/6 text-left flex flex-col gap-8">
+                    <div className="col lg:w-2/6 text-left flex flex-col gap-8">
                         {featuresData.slice(3, 6).map((feature, index) => (
                             <div
                                 key={index}
