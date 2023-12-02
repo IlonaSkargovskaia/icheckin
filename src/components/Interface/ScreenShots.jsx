@@ -12,6 +12,7 @@ import img4 from "../../assets/images/screenshots/4.png";
 import img5 from "../../assets/images/screenshots/5.png";
 import img6 from "../../assets/images/screenshots/6.png";
 import img7 from "../../assets/images/screenshots/7.png";
+import frame from '../../assets/images/frame.png'
 
 const data = [
     {
@@ -62,7 +63,7 @@ const ScreenShots = () => {
                 </div>
 
                 
-                    <div className="card">
+                    <div className="card container mx-auto">
                         <div
                             style={{
                                 width: "90%",
@@ -70,6 +71,7 @@ const ScreenShots = () => {
                                 margin: "0 auto",
                             }}
                         >
+                            <img src={frame} alt="icheckin-frame" className="slider-frame"/>
                             <ResponsiveContainer
                                 carouselRef={ref}
                                 render={(width, carouselRef) => {

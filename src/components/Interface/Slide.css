@@ -1,3 +1,12 @@
+.slider-frame{
+  max-width: 14rem;
+  margin: auto;
+  position: absolute;
+  left: 41.7%;
+  top: 0.5rem;
+  z-index: 7;
+}
+
 .react-stacked-center-carousel {
     overflow: visible !important;
 }
@@ -21,11 +30,10 @@
     transition: all 300ms ease;
     cursor: pointer;
     width: 100%;
-    /* height: 300px; */
+    border-radius: 25px;
     position: relative;
     background-color: #ffffff;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.05);
-    border-radius: 20px;
   }
   
   .card-card:hover {
@@ -50,6 +58,7 @@
     position: absolute;
     background-color: #17171791;
     transition: all 300ms ease;
+    border-radius: 25px;
   }
   
   .card-card:hover .card-overlay {
@@ -63,6 +72,7 @@
   
   .card-card .cover-image {
     object-fit: cover;
+    border-radius: 25px;
   }
   
   .card-card .cover {

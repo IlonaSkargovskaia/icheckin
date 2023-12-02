@@ -1,6 +1,7 @@
 import React from "react";
 import img from "../../assets/images/about.png";
 import { FaCheck } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const About = () => {
     return (
@@ -46,7 +47,9 @@ const About = () => {
                                 </p>
                             </li>
                         </ul>
-                        <button className="main-btn">Discover more</button>
+                        <Link to="/about">
+                            <button className="main-btn">Discover more</button>
+                        </Link>
                     </div>
                 </div>
             </div>

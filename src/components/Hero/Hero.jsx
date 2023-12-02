@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import appleIcon from "../../assets/images/appstore-badge.png";
 import androidIcon from "../../assets/images/googleplay-badge.png";
 import tablePic from "../../assets/images/top.avif";
 import { BsQrCodeScan } from "react-icons/bs";
 import { PiPlayCircleThin } from "react-icons/pi";
+import ModalOverview from "../Modal/ModalOverview";
 
 const Hero = () => {
+    const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+
+    const openVideoModal = () => {
+        setIsVideoModalOpen(true);
+    };
+
+    const closeVideoModal = () => {
+        setIsVideoModalOpen(false);
+    };
     return (
-        <section className="hero-banner ">
+        <section className="hero-banner " id="home">
             <div className="container mx-auto hero py-8 px-24 rounded-2xl mt-2 mb-8">
                 <div className="hero-content flex justify-center flex-wrap">
                     <div className="hero-left lg:w-1/2 pt-12">
@@ -55,15 +65,21 @@ const Hero = () => {
                                     <img
                                         src={appleIcon}
                                         alt="android-iCheckin"
-                                       
                                     />
                                 </a>
                             </div>
                         </div>
-                        <button className="hero-overview flex items-center gap-2 my-8 ">
+                        <button
+                            className="hero-overview flex items-center gap-2 my-8 "
+                            onClick={openVideoModal}
+                        >
                             <PiPlayCircleThin className="text-5xl" />
                             <p>Watch the Overview</p>
                         </button>
+                        <ModalOverview
+                            isOpen={isVideoModalOpen}
+                            onClose={closeVideoModal}
+                        />
                     </div>
                     <div className="hero-right lg:w-1/2 flex items-center">
                         <img

@@ -6,31 +6,43 @@ import { BiSolidLock } from "react-icons/bi";
 import { HiDownload } from "react-icons/hi";
 import { navLinks } from "./navbarLinks";
 
+
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
 
+    //scroll for navbar
     useEffect(() => {
         const handleScroll = () => {
-            // Check if the user has scrolled beyond a certain threshold
             setIsSticky(window.scrollY > 100);
         };
 
-        // Attach the scroll event listener when the component mounts
         window.addEventListener("scroll", handleScroll);
 
-        // Clean up the event listener when the component unmounts
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
 
+    //prevent scrolling body
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.body.classList.add("no-scroll");
+        } else {
+            document.body.classList.remove("no-scroll");
+        }
+        return () => {
+            document.body.classList.remove("no-scroll");
+        };
+    }, [isMenuOpen]);
+
     return (
         <>
             <header
-                className={`navbar-area sm:px-8 px-4 py-2 z-10 w-full ${
+                className={`navbar-area sm:px-8 px-4 py-2 z-10 w-full  ${
                     isSticky ? "sticky" : ""
                 }`}
+                style={{ zIndex: 100 }}
             >
                 <div className="container mx-auto">
                     <nav className="flex justify-between items-center max-container">
@@ -52,13 +64,19 @@ const Navbar = () => {
                         </ul>
                         <div className="flex gap-2 leading-normal font-medium  max-lg:hidden wide:mr-24">
                             <button className="secondary-btn flex items-center">
-                                <BiSolidLock className="text-xl pr-1" style={{marginLeft: "-0.25rem"}}/> Member
-                                Login
+                                <BiSolidLock
+                                    className="text-xl pr-1"
+                                    style={{ marginLeft: "-0.25rem" }}
+                                />{" "}
+                                Member Login
                             </button>
 
                             <button className="main-btn flex items-center">
-                                <HiDownload className="text-xl pr-1" style={{marginLeft: "-0.25rem"}}/> Get the
-                                app
+                                <HiDownload
+                                    className="text-xl pr-1"
+                                    style={{ marginLeft: "-0.25rem" }}
+                                />{" "}
+                                Get the app
                             </button>
                         </div>
                         <div
@@ -74,7 +92,7 @@ const Navbar = () => {
             </header>
             {isMenuOpen && (
                 <div>
-                    <nav className="fixed top-0 right-0 left-0 bottom-0 lg:bottom-auto bg-slate-50">
+                    <nav className="fixed top-0 right-0 left-0 bottom-0 lg:bottom-auto bg-slate-50 z-20">
                         <div
                             className="hidden max-lg:block fixed right-0 px-8 py-4 cursor-pointer"
                             onClick={() => {
@@ -89,6 +107,7 @@ const Navbar = () => {
                                     <a
                                         href={item.href}
                                         className="nav-link py-2.5 block w-full hover:bg-slate-200 text-center"
+                                        onClick={() => setIsMenuOpen(false)}
                                     >
                                         {item.label}
                                     </a>
@@ -96,13 +115,19 @@ const Navbar = () => {
                             ))}
                             <div className="flex my-4 gap-4 flex-wrap justify-center">
                                 <button className="secondary-btn flex items-center">
-                                    <BiSolidLock className="text-xl pr-1" style={{marginLeft: "-0.25rem"}}/>
+                                    <BiSolidLock
+                                        className="text-xl pr-1"
+                                        style={{ marginLeft: "-0.25rem" }}
+                                    />
                                     Member Login
                                 </button>
 
                                 <button className="main-btn flex items-center">
-                                    <HiDownload className="text-xl pr-1" style={{marginLeft: "-0.25rem"}}/> Get
-                                    the app
+                                    <HiDownload
+                                        className="text-xl pr-1"
+                                        style={{ marginLeft: "-0.25rem" }}
+                                    />
+                                    Get the app
                                 </button>
                             </div>
                         </ul>

@@ -67,9 +67,11 @@ article.nextSlide {
 
 .react-multiple-carousel__arrow--left {
     left: 0;
+    z-index: 10;
 }
 .react-multiple-carousel__arrow--right {
     right: 0;
+    z-index: 10;
 }
 
 .star-rating{

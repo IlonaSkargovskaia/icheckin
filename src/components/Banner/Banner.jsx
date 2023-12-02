@@ -4,7 +4,7 @@ import androidIcon from "../../assets/images/googleplay-badge.png";
 
 const Banner = () => {
     return (
-        <section className="banner container mx-auto rounded-2xl mb-24">
+        <section className="banner container mx-auto rounded-2xl mb-24" id="#banner">
             <div className="flex flex-col items-center justify-center gap-8">
                 <h2 className="white-title">
                     Download i-Checkin App Now!
