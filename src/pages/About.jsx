@@ -10,7 +10,7 @@ const About = () => {
             </div>
             <div className="container mx-auto my-8 ">
                 <div className="about-row flex items-center gap-4">
-                    <div className="col w-1/2 flex justify-center">
+                    <div className="col lg:w-1/2 flex justify-center">
                         <div className="about-img">
                             <img
                                 src={img}
@@ -19,7 +19,7 @@ const About = () => {
                             />
                         </div>
                     </div>
-                    <div className="col w-1/2">
+                    <div className="col lg:w-1/2">
                         <div className="about-title">
                             <h2 className="title">
                                 About <span>i-Checkin</span>
@@ -52,9 +52,9 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="about-row flex items-center mx-auto justify-center gap-4 w-5/6 my-16">
+                <div className="about-row flex items-center mx-auto justify-center gap-4 lg:w-5/6 my-16">
                     
-                    <div className="col w-1/2">
+                    <div className="col lg:w-1/2">
                         <div className="about-title">
                             <h2 className="title">
                                 About <span>i-Checkin</span>
@@ -98,7 +98,7 @@ const About = () => {
                 </div>
 
                 <div className="about-row flex items-center gap-4">
-                    <div className="col w-1/2 flex justify-center">
+                    <div className="col lg:w-1/2 flex justify-center">
                         <div className="about-img">
                             <img
                                 src={img}
@@ -107,7 +107,7 @@ const About = () => {
                             />
                         </div>
                     </div>
-                    <div className="col w-1/2">
+                    <div className="col lg:w-1/2">
                         <div className="about-title">
                             <h2 className="title">
                                 About <span>i-Checkin</span>

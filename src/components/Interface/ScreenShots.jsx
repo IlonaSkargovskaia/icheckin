@@ -55,7 +55,7 @@ const ScreenShots = () => {
                     <h2 style={{ lineHeight: "1.2" }} className="mb-4">
                         Take a visual tour of our user-friendly Interface
                     </h2>
-                    <p className="w-1/2 mb-16 mx-auto">
+                    <p className="lg:w-1/2 mb-16 mx-auto">
                         Boost attendee experiences with our user-friendly QR
                         code scanner, <br />
                         making event check-ins quick and enjoyable.

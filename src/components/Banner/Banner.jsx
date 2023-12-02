@@ -9,8 +9,8 @@ const Banner = () => {
                 <h2 className="white-title">
                     Download i-Checkin App Now!
                 </h2>
-                <div className="desc w-1/2 text-center">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, tempore veniam minus voluptates <br/>at amet ut aut fugiat enim cumque reprehenderit velit nam! 
+                <div className="desc w-3/4 lg:w-1/2 text-center">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, tempore veniam minus voluptates at amet ut aut fugiat enim cumque reprehenderit velit nam! 
                 </div>
                 <div className="download-icons flex gap-4 items-center">
                             <div className="android-icon w-full">

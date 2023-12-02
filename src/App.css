@@ -856,4 +856,16 @@ footer ul li {
         background-color: var(--grey);
         
     }
+
+    .slider-frame{
+        left: 33.7% !important;
+    }
+
+    .banner{
+        padding: 3rem 0;
+    }
+
+    .questions-header{
+        text-align: center;
+    }
 }

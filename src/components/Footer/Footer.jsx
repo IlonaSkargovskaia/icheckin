@@ -8,8 +8,8 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="container mx-auto">
-                <div className="footer-row flex gap-8 py-8 justify-between">
-                    <div className="col flex flex-col w-2/5 gap-4">
+                <div className="footer-row flex gap-16 lg:gap-8 py-8 justify-center lg:justify-between flex-wrap lg:flex-nowrap text-center lg:text-left">
+                    <div className="col flex flex-col lg:w-2/5 gap-4 items-center lg:items-start">
                         <div className="footer-logo w-1/2">
                             <img src={footerlogo} alt="iCheckin-logo" />
                         </div>
@@ -20,7 +20,7 @@ const Footer = () => {
                             Event hosts, Wedding planners, and more...
                         </div>
                     </div>
-                    <div className="col w-1/5 ">
+                    <div className="col lg:w-1/5 ">
                         <h4>Company</h4>
                         <ul>
                             {navLinks.map((item, index) => {
@@ -32,7 +32,7 @@ const Footer = () => {
                             })}
                         </ul>
                     </div>
-                    <div className="col w-2/5 ">
+                    <div className="col lg:w-2/5 ">
                         <h4>Contacts</h4>
                         <div className="flex flex-col gap-4">
                             <p>
@@ -52,7 +52,7 @@ const Footer = () => {
                             
                         </div>
                     </div>
-                    <div className="col w-2/5 ">
+                    <div className="col w-3/4 lg:w-2/5 ">
                         <h4>Get the latest information</h4>
                         <div className="flex">
                             <input
@@ -65,7 +65,7 @@ const Footer = () => {
                                 <CiPaperplane />
                             </button>
                         </div>
-                        <div className="social-links flex gap-4 mt-8">
+                        <div className="social-links flex gap-4 mt-8 justify-center lg:justify-start">
                                 {socialMediaIcons.map((socialMedia, index) => (
                                     <a
                                         key={index}
