@@ -526,9 +526,6 @@ main {
     color: var(--light-grey);
 }
 
-.box h3 {
-    /* color: var(--light-grey) */
-}
 
 /* process */
 
@@ -624,6 +621,10 @@ main {
     color: var(--light-grey)
 }
 
+.feature-image{
+    transition: var(--transition);
+}
+
 /* banner */
 
 .banner {
@@ -655,6 +656,20 @@ main {
     background-attachment: fixed;
     color: #fff;
     min-height: 53rem;
+}
+
+/* inner pages */
+
+.page-title{
+    background-color: var(--dark-grey);
+    background-image: url(./assets/images/lines.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    padding: 2rem 0;
+    color: #fff;
+    min-height: 10rem;
+    margin-bottom: 2rem;
 }
 
 /* faq */

@@ -1,10 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import featuresData from "./data.js";
 import frame from "../../assets/images/frame.png";
-import { Link } from "react-router-dom";
-import { HiDownload } from "react-icons/hi";
+import bg1 from "../../assets/images/backgrounds/1.png";
+import bg2 from "../../assets/images/backgrounds/2.png";
+import bg3 from "../../assets/images/backgrounds/3.png";
+import bg4 from "../../assets/images/backgrounds/4.png";
+import bg5 from "../../assets/images/backgrounds/5.png";
+import bg6 from "../../assets/images/backgrounds/6.png";
 
 const FeaturesBlock = () => {
+    const [hovered, setHovered] = useState(bg2);
+    const handleFeatureHover = (index) => {
+        setHovered(index);
+    };
+
+    const getBackgroundImage = () => {
+        switch (hovered) {
+            case 0:
+                return bg1;
+            case 1:
+                return bg2;
+            case 2:
+                return bg3;
+            case 3:
+                return bg4;
+            case 4:
+                return bg5;
+            case 5:
+                return bg6;
+            default:
+                return bg2;
+        }
+    };
     return (
         <section className="features pb-24" id="features">
             <div className="container mx-auto">
@@ -23,7 +50,8 @@ const FeaturesBlock = () => {
                         {featuresData.slice(0, 3).map((feature, index) => (
                             <div
                                 key={index}
-                                className="feature flex flex-row-reverse items-center gap-4"
+                                className="feature flex flex-row-reverse items-center gap-4 hover:cursor-pointer"
+                                onMouseEnter={() => handleFeatureHover(index)}
                             >
                                 <div className="icon">{feature.icon}</div>
                                 <div className="content">
@@ -34,17 +62,31 @@ const FeaturesBlock = () => {
                         ))}
                     </div>
                     <div className="col w-1/6 flex justify-center">
-                        <img
-                            src={frame}
-                            alt="iCheckin-features"
-                            style={{ maxHeight: "30rem" }}
-                        />
+                        <div
+                            className="feature-image"
+                            style={{
+                                backgroundImage: `url(${getBackgroundImage()})`,
+                                maxHeight: "30rem",
+                                backgroundSize: "contain",
+                                borderRadius: "35px",
+                                backgroundPosition: "center"
+                            }}
+                        >
+                            <img
+                                src={frame}
+                                alt="iCheckin-features"
+                                style={{ maxHeight: "30rem" }}
+                            />
+                        </div>
                     </div>
                     <div className="col w-2/6 text-left flex flex-col gap-8">
                         {featuresData.slice(3, 6).map((feature, index) => (
                             <div
                                 key={index}
-                                className="feature flex flex-row items-center gap-4"
+                                className="feature flex flex-row items-center gap-4 hover:cursor-pointer"
+                                onMouseEnter={() =>
+                                    handleFeatureHover(index + 3)
+                                }
                             >
                                 <div className="icon">{feature.icon}</div>
                                 <div className="content">
@@ -55,7 +97,6 @@ const FeaturesBlock = () => {
                         ))}
                     </div>
                 </div>
-
             </div>
         </section>
     );
