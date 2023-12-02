@@ -8,7 +8,7 @@ const Testimonials = () => {
                 <div className="testimonial-header text-center">
                     <div className="subtitle">- Customers Feedback</div>
                     <h2 className="title">
-                      Read What Our Users say <br/> about i-Checkin App 
+                      Read What Our Users say about i-Checkin App 
                     </h2>
                 </div>
                 <div className="testimonial-reviews w-5/6 mx-auto mt-24">

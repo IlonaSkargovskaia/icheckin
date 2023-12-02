@@ -14,8 +14,8 @@ const Questions = () => {
     return (
         <section className="questions my-32" id="faq">
             <div className="container mx-auto w-5/6 ">
-                <div className="flex gap-8 justify-between items-center sm:flex-wrap lg:flex-nowrap">
-                    <div className="col-left sm:w-full lg:w-1/2">
+                <div className="flex gap-8 justify-between items-center flex-wrap lg:flex-nowrap">
+                    <div className="col-left w-full">
                         <div className="questions-header flex flex-col">
                             <div className="subtitle">- FAQ</div>
                             <h2 className="title mb-12">
@@ -24,7 +24,7 @@ const Questions = () => {
 
                             
                         </div>
-                        <div className="accordion pl-16">
+                        <div className="accordion xl:pl-16">
                                 {faqData.map((item, index) => (
                                     <div
                                         key={index}

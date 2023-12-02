@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
     StackedCarousel,
     ResponsiveContainer,
@@ -46,7 +46,7 @@ const data = [
 ];
 
 const ScreenShots = () => {
-    const ref = React.useRef(StackedCarousel);
+    const ref = useRef(StackedCarousel);
     return (
         <section className="screens mb-24">
             <div className="screens-bg p-24">
@@ -57,7 +57,7 @@ const ScreenShots = () => {
                     </h2>
                     <p className="lg:w-1/2 mb-16 mx-auto">
                         Boost attendee experiences with our user-friendly QR
-                        code scanner, <br />
+                        code scanner,
                         making event check-ins quick and enjoyable.
                     </p>
                 </div>

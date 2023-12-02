@@ -7,7 +7,7 @@ const About = () => {
     return (
         <section className="about my-32">
             <div className="container mx-auto">
-                <div className="about-row flex items-center gap-4">
+                <div className="about-row flex flex-col md:flex-row items-center gap-4">
                     <div className="img-col-left col lg:w-1/2 flex justify-center">
                         <div className="about-img">
                             <img

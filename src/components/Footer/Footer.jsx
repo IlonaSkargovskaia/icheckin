@@ -80,7 +80,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr />
-                <div className="footer-row flex py-8 justify-between">
+                <div className="footer-row flex flex-col md:flex-row py-8 justify-between items-center">
                     <div className="col">
                         <p className="copyrights">
                             Copyright © {new Date().getFullYear()} i-Checkin.

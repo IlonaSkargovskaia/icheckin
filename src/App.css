@@ -23,6 +23,8 @@
     --box-shadow: 0 10px 28px 0 hsla(210, 8%, 54%, .2);
 }
 
+
+
 html,
 body,
 #root {
@@ -54,6 +56,11 @@ body {
     flex-direction: column;
 }
 
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
 main {
     flex: 1 1 auto;
 }
@@ -74,6 +81,7 @@ h2.white-title {
     font-weight: 400;
     color: var(--white);
     text-transform: none;
+    text-align: center;
 }
 
 h3 {
@@ -608,7 +616,7 @@ main {
     color: var(--light-grey)
 }
 
-.feature-image{
+.feature-image {
     transition: var(--transition);
 }
 
@@ -647,7 +655,7 @@ main {
 
 /* inner pages */
 
-.page-title{
+.page-title {
     background-color: var(--dark-grey);
     background-image: url(./assets/images/lines.png);
     background-repeat: no-repeat;
@@ -741,25 +749,25 @@ footer ul li {
 }
 
 @media screen and (min-width: 1580px) {
-    .circle-animate-wrap{
-        top:3rem;
+    .circle-animate-wrap {
+        top: 3rem;
         right: 4rem;
     }
 }
 
 @media screen and (max-width: 1256px) {
-    .circle-animate{
-        width:500px;
+    .circle-animate {
+        width: 500px;
         height: 500px;
     }
 
-    .circle-animate .circle-md{
-        width:400px;
+    .circle-animate .circle-md {
+        width: 400px;
         height: 400px;
     }
 
-    .circle-animate .circle-sm{
-        width:300px;
+    .circle-animate .circle-sm {
+        width: 300px;
         height: 300px;
     }
 
@@ -782,6 +790,8 @@ footer ul li {
         margin-left: -202px;
         top: 227px;
     }
+
+
 }
 
 
@@ -790,82 +800,160 @@ footer ul li {
         display: none
     }
 
-    .hero{
+    .hero {
         padding: 2rem;
     }
 
-    .hero-left{
+    .hero-left {
         padding-top: 1rem;
         text-align: center;
     }
 
-    .hero-badge{
+    .hero-badge {
         margin: auto;
-        margin-bottom: 3rem;    
+        margin-bottom: 3rem;
     }
 
-    .hero h1{
+    .hero h1 {
         max-width: 85%;
         margin: auto;
     }
 
-    .hero-description{
+    .hero-description {
         margin: 2rem auto;
     }
 
-    .download-icons{
+    .download-icons {
         justify-content: center;
     }
 
-    .hero-overview{
+    .hero-overview {
         margin: 2rem auto 0 auto;
     }
 
-    .boxes{
+    .boxes {
         gap: 2.5rem;
     }
 
-    .box-title h3{
+    .box-title h3 {
         font-size: 1rem;
     }
 
-    .img-col-left{
+    .img-col-left {
         width: 100%;
         margin-right: 2rem;
     }
+
     .about-list {
         max-width: 100%;
     }
 
-    .process-steps{
+    .process-steps {
         gap: 4rem;
     }
 
-    .features-row{
+    .features-row {
         flex-direction: column;
     }
 
-    .features-row .col{
+    .features-row .col {
         text-align: left;
     }
 
-    .features-row .feature{
+    .features-row .feature {
         padding: 1rem;
     }
-    .features-row .feature:hover{
+
+    .features-row .feature:hover {
         background-color: var(--grey);
-        
+
     }
 
-    .slider-frame{
-        left: 33.7% !important;
-    }
 
-    .banner{
+    .banner {
         padding: 3rem 0;
     }
 
-    .questions-header{
+    .questions-header {
         text-align: center;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1280px) {
+    .slider-frame {
+        left: 35.7% !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .slider-frame {
+        left: 34% !important;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .slider-frame {
+        left: 31.5% !important;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .slider-frame {
+        left: 28.7% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider-frame {
+        left: 26.5% !important;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .slider-frame {
+        left: 8.7% !important;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .screens-bg{
+        min-height: 65rem;
+    }
+    .slider-frame {
+        left: -14.3% !important;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .slider-frame {
+        left: -19.3% !important;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .slider-frame {
+        left: -33px !important;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .slider-frame {
+        left: -45px !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .slider-frame {
+        left: -53px !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .slider-frame {
+        left: -58px !important;
     }
 }

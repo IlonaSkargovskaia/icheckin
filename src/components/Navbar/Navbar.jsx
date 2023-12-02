@@ -39,7 +39,7 @@ const Navbar = () => {
     return (
         <>
             <header
-                className={`navbar-area sm:px-8 px-4 py-2 z-10 w-full  ${
+                className={`navbar-area py-2 z-10 w-full  ${
                     isSticky ? "sticky" : ""
                 }`}
                 style={{ zIndex: 100 }}
