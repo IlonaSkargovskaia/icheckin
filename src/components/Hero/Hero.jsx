@@ -19,7 +19,7 @@ const Hero = () => {
     return (
         <section className="hero-banner " id="home">
             <div className="container mx-auto hero  rounded-2xl mt-2 mb-8">
-                <div className="hero-content flex justify-center flex-wrap lg:flex-nowrap py-8 lg:pl-24">
+                <div className="hero-content flex justify-center flex-wrap lg:flex-nowrap py-8 xl:pl-24">
                     <div className="hero-left pt-12">
                         <div className="hero-badge badge flex items-center my-8 bg-white w-max py-2 px-2 rounded-full">
                             <div className="badge-icon">

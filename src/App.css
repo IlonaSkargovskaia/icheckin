@@ -755,6 +755,12 @@ footer ul li {
     }
 }
 
+@media screen and (max-width: 1280px) {
+    .slider-frame {
+        left: 37.9% !important;
+    }
+}
+
 @media screen and (max-width: 1256px) {
     .circle-animate {
         width: 500px;
@@ -804,10 +810,6 @@ footer ul li {
         padding: 2rem;
     }
 
-    .hero-left {
-        padding-top: 1rem;
-        text-align: center;
-    }
 
     .hero-badge {
         margin: auto;
@@ -890,29 +892,33 @@ footer ul li {
     .questions-header {
         text-align: center;
     }
-}
 
-
-
-
-@media screen and (max-width: 1280px) {
-    .slider-frame {
-        left: 35.7% !important;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .slider-frame {
-        left: 34% !important;
+    .testimonial-header h2 {
+        font-size: 47px;
     }
 
     .comp,
     .cont {
         width: 45%;
     }
+
+    .slider-frame {
+        left: 34% !important;
+    }
+
+    .screens-bg .title p{
+        max-width: 70%;
+    }
 }
 
+
+
 @media screen and (max-width: 912px) {
+
+    .hero-left {
+        padding-top: 1rem;
+        text-align: center;
+    }
     .slider-frame {
         left: 31.5% !important;
     }
@@ -925,8 +931,12 @@ footer ul li {
 }
 
 @media screen and (max-width: 820px) {
+
+    .hero h1 {
+        max-width: 95%;
+    }
     .slider-frame {
-        left: 28.7% !important;
+        left: 32.5% !important;
     }
 
     .testimonial-header h2 {
@@ -936,13 +946,14 @@ footer ul li {
 
 @media screen and (max-width: 768px) {
     .slider-frame {
-        left: 26.5% !important;
+        left: 28.5% !important;
     }
 
     .boxes {
         gap: 1rem;
     }
 }
+
 
 @media screen and (max-width: 540px) {
     .slider-frame {
