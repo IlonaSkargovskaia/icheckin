@@ -17,7 +17,7 @@ const About = () => {
                             />
                         </div>
                     </div>
-                    <div className="col lg:w-1/2">
+                    <div className="col lg:w-1/2 text-center md:text-left">
                         <div className="about-title">
                             <h2 className="title">
                                 About <span>i-Checkin</span>

@@ -49,7 +49,7 @@ const ScreenShots = () => {
     const ref = useRef(StackedCarousel);
     return (
         <section className="screens mb-24">
-            <div className="screens-bg p-24">
+            <div className="screens-bg py-8 px-4 lg:p-24">
                 <div className="title text-center">
                     <div className="subtitle">- Quick view</div>
                     <h2 style={{ lineHeight: "1.2" }} className="mb-4">

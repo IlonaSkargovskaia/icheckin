@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="container mx-auto">
-                <div className="footer-row flex gap-16 lg:gap-8 py-8 justify-center lg:justify-between flex-wrap lg:flex-nowrap text-center lg:text-left">
+                <div className="footer-row flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-16 lg:gap-8 py-8 justify-center lg:justify-between flex-wrap lg:flex-nowrap text-center lg:text-left">
                     <div className="col flex flex-col lg:w-2/5 gap-4 items-center lg:items-start">
                         <div className="footer-logo w-1/2">
                             <img src={footerlogo} alt="iCheckin-logo" />
@@ -20,7 +20,7 @@ const Footer = () => {
                             Event hosts, Wedding planners, and more...
                         </div>
                     </div>
-                    <div className="col lg:w-1/5 ">
+                    <div className="comp col lg:w-1/5 ">
                         <h4>Company</h4>
                         <ul>
                             {navLinks.map((item, index) => {
@@ -32,13 +32,13 @@ const Footer = () => {
                             })}
                         </ul>
                     </div>
-                    <div className="col lg:w-2/5 ">
+                    <div className="cont col lg:w-2/5 ">
                         <h4>Contacts</h4>
                         <div className="flex flex-col gap-4">
                             <p>
-                                Feel free to reach out to us for  any inquiries <br />
+                                Feel free to reach out to us for  any inquiries
                                 or just to say hello. We're always happy to
-                                connect <br />with our community!
+                                connect with our community!
                             </p>
                             <div>
                                 <a
@@ -82,14 +82,14 @@ const Footer = () => {
                 <hr />
                 <div className="footer-row flex flex-col md:flex-row py-8 justify-between items-center">
                     <div className="col">
-                        <p className="copyrights">
+                        <p className="copyrights text-center md:text-left mb-4">
                             Copyright © {new Date().getFullYear()} i-Checkin.
                             All rights reserved.
                         </p>
                     </div>
-                    <div className="col flex gap-4">
+                    <div className="col flex flex-col sm:flex-row text-center sm:text-left gap-4 mb-4">
                         <a href="/">User terms & Conditions</a>
-                        <span> | </span>
+                        <span className="hidden sm:block"> | </span>
                         <a href="/">Privacy Policy</a>
                     </div>
                 </div>

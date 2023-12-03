@@ -13,7 +13,7 @@ const Questions = () => {
 
     return (
         <section className="questions my-32" id="faq">
-            <div className="container mx-auto w-5/6 ">
+            <div className="quest-cont container mx-auto w-5/6 ">
                 <div className="flex gap-8 justify-between items-center flex-wrap lg:flex-nowrap">
                     <div className="col-left w-full">
                         <div className="questions-header flex flex-col">
@@ -60,7 +60,7 @@ const Questions = () => {
                                 ))}
                             </div>
                     </div>
-                    <div className="col-right lg:w-1/2">
+                    <div className="col-right lg:w-5/6">
                         <div className="quest-img mt-8">
                             {/* <img src={faq} alt="" className="quest-img-pic" /> */}
                             <video className="videoQuestions" autoPlay loop muted playsInline>

@@ -18,21 +18,21 @@ const Hero = () => {
     };
     return (
         <section className="hero-banner " id="home">
-            <div className="container mx-auto hero py-8 pl-24 rounded-2xl mt-2 mb-8">
-                <div className="hero-content flex justify-center flex-wrap lg:flex-nowrap">
+            <div className="container mx-auto hero  rounded-2xl mt-2 mb-8">
+                <div className="hero-content flex justify-center flex-wrap lg:flex-nowrap py-8 lg:pl-24">
                     <div className="hero-left pt-12">
                         <div className="hero-badge badge flex items-center my-8 bg-white w-max py-2 px-2 rounded-full">
                             <div className="badge-icon">
                                 <BsQrCodeScan />
                             </div>
                             <p
-                                className="px-2"
+                                className="px-2 badge-text"
                                 style={{ fontSize: " 14px", fontWeight: "700" }}
                             >
                                 Revolutionizing Event Attendance Tracking
                             </p>
                         </div>
-                        <h1 className="xl:text-6xl text-5xl font-black">
+                        <h1 className="xl:text-6xl lg:text-5xl text-4xl font-black">
                             Make <span>Attendance </span>Tracking Easy
                         </h1>
                         <div className="hero-description my-12">
@@ -43,7 +43,7 @@ const Hero = () => {
                             and streamline the attendance process like never
                             before.
                         </div>
-                        <div className="download-icons flex gap-4 items-center">
+                        <div className="download-icons flex gap-4 items-center flex-wrap">
                             <div className="android-icon">
                                 <a
                                     href="https://play.google.com/store/apps/details?id=com.sobow.icheckin"

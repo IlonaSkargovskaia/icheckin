@@ -56,7 +56,7 @@ body {
     flex-direction: column;
 }
 
-.container{
+.container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
@@ -842,6 +842,7 @@ footer ul li {
     .img-col-left {
         width: 100%;
         margin-right: 2rem;
+
     }
 
     .about-list {
@@ -871,7 +872,19 @@ footer ul li {
 
 
     .banner {
-        padding: 3rem 0;
+        padding: 3rem 1rem;
+    }
+
+    .banner h2.white-title {
+        font-size: 34px;
+    }
+
+    .banner .download-icons {
+        justify-content: space-between;
+    }
+
+    .banner .download-icons .apple-icon img {
+        max-height: 49px !important;
     }
 
     .questions-header {
@@ -892,11 +905,22 @@ footer ul li {
     .slider-frame {
         left: 34% !important;
     }
+
+    .comp,
+    .cont {
+        width: 45%;
+    }
 }
 
 @media screen and (max-width: 912px) {
     .slider-frame {
         left: 31.5% !important;
+    }
+
+    .img-col-left {
+        width: 100%;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -904,11 +928,19 @@ footer ul li {
     .slider-frame {
         left: 28.7% !important;
     }
+
+    .testimonial-header h2 {
+        font-size: 44px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .slider-frame {
         left: 26.5% !important;
+    }
+
+    .boxes {
+        gap: 1rem;
     }
 }
 
@@ -916,19 +948,87 @@ footer ul li {
     .slider-frame {
         left: 8.7% !important;
     }
+
+    .slider-frame {
+        /* left: -14.3% !important; */
+        display: none;
+    }
 }
 
 @media screen and (max-width: 430px) {
 
-    .screens-bg{
+    .screens-bg {
         min-height: 65rem;
     }
-    .slider-frame {
-        left: -14.3% !important;
+
+
+    .comp,
+    .cont {
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 360px) {
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .about{
+        margin: 5rem 0;
+    }
+
+    .download-icons img {
+        width: 10rem;
+    }
+
+    .process-title h2 {
+        font-size: 30px;
+    }
+
+    .features h2 {
+
+        line-height: 1;
+        margin-bottom: 2rem;
+
+    }
+
+    .feature {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .screens h2 {
+        font-size: 30px;
+    }
+
+    .screens-bg {
+        min-height: 56rem;
+    }
+
+    .banner .download-icons {
+        justify-content: center;
+    }
+
+
+    .testimonial-header h2 {
+        font-size: 33px;
+    }
+
+    .testimonial-reviews {
+        width: 100%;
+    }
+
+    .quest-cont {
+        width: 100%;
+    }
+
+    .badge-text {
+        font-size: 12px !important;
+    }
+}
+
+/* @media screen and (max-width: 414px) {
     .slider-frame {
         left: -19.3% !important;
     }
@@ -956,4 +1056,4 @@ footer ul li {
     .slider-frame {
         left: -58px !important;
     }
-}
+} */
